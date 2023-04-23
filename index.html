@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<form id="registrationForm" action="upload_file.php?upload='docu'" method="post" enctype="multipart/form-data" >
+        <table >
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" id="email" name="userInput" value="<?php echo  $email; ?>" onBlur="validateEmail(this.value)" onKeyUp="validateEmail(this.value)" maxlength="80" size="25"><span id="emailError" class="error">  <?php echo  $emailErr;?></span></td>
+
+            </tr>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="userInput" id="fname" value="<?php echo  $firstName; ?>" onKeyUp="validateName(this.value,1)"  onBlur="validateName(this.value,1)"><span id="fnameError" class="error">  <?php echo  $firstNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="userInput" id="lname" value="<?php echo  $lastName; ?>" onKeyUp="validateName(this.value,2)"  onBlur="validateName(this.value,2)"><span id="lnameError"  class="error">  <?php echo  $lastNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input type="text" name="userInput" id="phone" value="<?php echo  $phone; ?>" maxlength="15" size="10" onBlur="validatePhone(this.value)" onKeyUp="validatePhone(this.value)"><span id="phoneError" class="error">  <?php echo  $phoneErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input id="password" type="password" id="password" name="userInput" maxlength="20" onBlur="validatePassword(this.value)" onKeyUp="validatePassword(this.value)"><span id="passwordError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Confirm Password: </td>
+                <td><input id="confirm" type="password" id="confirm" name="userInput" maxlength="20" onBlur="validateConfirm(this.value)" onKeyUp="validateConfirm(this.value)"> <span id="confirmError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+
+        </table>
+
+        <br/>
+        <hr/>
+        <h2>Manuscript's Information</h2>
+
+        <label for="synopsisFile">Synopsis:</label>
+            <input type="file" name="synopsisFile" id="synopsisFile"><span class="error"><?php echo  $synopsisErr;?></span><br><br/>
+
+        <label for="synopsisFile">Chapters:</label>
+            <input type="file" name="chaptersFile" id="synopsisFile"><span class="error"><?php echo  $chaptersErr;?></span><br>
+
+        <br/> <br/>
+
+        <input id = "submit" type="submit" name="register_submit" value="Submit" onclick ="return validation();">  
+    </form><form id="registrationForm" action="upload_file.php?upload='docu'" method="post" enctype="multipart/form-data" >
+        <table >
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" id="email" name="userInput" value="<?php echo  $email; ?>" onBlur="validateEmail(this.value)" onKeyUp="validateEmail(this.value)" maxlength="80" size="25"><span id="emailError" class="error">  <?php echo  $emailErr;?></span></td>
+
+            </tr>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="userInput" id="fname" value="<?php echo  $firstName; ?>" onKeyUp="validateName(this.value,1)"  onBlur="validateName(this.value,1)"><span id="fnameError" class="error">  <?php echo  $firstNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="userInput" id="lname" value="<?php echo  $lastName; ?>" onKeyUp="validateName(this.value,2)"  onBlur="validateName(this.value,2)"><span id="lnameError"  class="error">  <?php echo  $lastNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input type="text" name="userInput" id="phone" value="<?php echo  $phone; ?>" maxlength="15" size="10" onBlur="validatePhone(this.value)" onKeyUp="validatePhone(this.value)"><span id="phoneError" class="error">  <?php echo  $phoneErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input id="password" type="password" id="password" name="userInput" maxlength="20" onBlur="validatePassword(this.value)" onKeyUp="validatePassword(this.value)"><span id="passwordError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Confirm Password: </td>
+                <td><input id="confirm" type="password" id="confirm" name="userInput" maxlength="20" onBlur="validateConfirm(this.value)" onKeyUp="validateConfirm(this.value)"> <span id="confirmError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+
+        </table>
+
+        <br/>
+        <hr/>
+        <h2>Manuscript's Information</h2>
+
+        <label for="synopsisFile">Synopsis:</label>
+            <input type="file" name="synopsisFile" id="synopsisFile"><span class="error"><?php echo  $synopsisErr;?></span><br><br/>
+
+        <label for="synopsisFile">Chapters:</label>
+            <input type="file" name="chaptersFile" id="synopsisFile"><span class="error"><?php echo  $chaptersErr;?></span><br>
+
+        <br/> <br/>
+
+        <input id = "submit" type="submit" name="register_submit" value="Submit" onclick ="return validation();">  
+    </form>
+<form id="registrationForm" action="upload_file.php?upload='docu'" method="post" enctype="multipart/form-data" >
+        <table >
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" id="email" name="userInput" value="<?php echo  $email; ?>" onBlur="validateEmail(this.value)" onKeyUp="validateEmail(this.value)" maxlength="80" size="25"><span id="emailError" class="error">  <?php echo  $emailErr;?></span></td>
+
+            </tr>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" name="userInput" id="fname" value="<?php echo  $firstName; ?>" onKeyUp="validateName(this.value,1)"  onBlur="validateName(this.value,1)"><span id="fnameError" class="error">  <?php echo  $firstNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" name="userInput" id="lname" value="<?php echo  $lastName; ?>" onKeyUp="validateName(this.value,2)"  onBlur="validateName(this.value,2)"><span id="lnameError"  class="error">  <?php echo  $lastNameErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input type="text" name="userInput" id="phone" value="<?php echo  $phone; ?>" maxlength="15" size="10" onBlur="validatePhone(this.value)" onKeyUp="validatePhone(this.value)"><span id="phoneError" class="error">  <?php echo  $phoneErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input id="password" type="password" id="password" name="userInput" maxlength="20" onBlur="validatePassword(this.value)" onKeyUp="validatePassword(this.value)"><span id="passwordError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+            <tr>
+                <td>Confirm Password: </td>
+                <td><input id="confirm" type="password" id="confirm" name="userInput" maxlength="20" onBlur="validateConfirm(this.value)" onKeyUp="validateConfirm(this.value)"> <span id="confirmError" class="error">  <?php echo  $passwordErr;?></span></td>
+            </tr>
+
+        </table>
+
+        <br/>
+        <hr/>
+        <h2>Manuscript's Information</h2>
+
+        <label for="synopsisFile">Synopsis:</label>
+            <input type="file" name="synopsisFile" id="synopsisFile"><span class="error"><?php echo  $synopsisErr;?></span><br><br/>
+
+        <label for="synopsisFile">Chapters:</label>
+            <input type="file" name="chaptersFile" id="synopsisFile"><span class="error"><?php echo  $chaptersErr;?></span><br>
+
+        <br/>
+	<br/>
+	<input id = "submit" type="submit" name="register_submit" value="Submit" onclick ="return validation();">  
+</form>
